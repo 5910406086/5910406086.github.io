@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Specificity</title>
+	<link rel="stylesheet" media="screen" href="style.css">
+<meta charset="utf-8">
+<meta charset="TIS-620">
+
+</head>
+<body id="font">
+	<div class="col-1">
+		<header class="banner">
+			<h1>CSS Specificity</h1>
+		</header>
+	<div class="main" >
+		<div >
+			<h3>What is CSS Specificity ?</h3>
+			<p>คือ ลำดับความสำคัญในการเลือกใช้ selector โดยจะมีค่าเป็นตัวบอกให้browserรับรู้ ซึ่งก็จะมีค่าแตกต่างกันไป ในแต่ละรูปแบบการเขียน selector</p>
+		</div>
+		<div>
+			<h3>Selector Types</h3>
+			<p>• Type selectors  เช่น div , a</p>
+			<p>• Class selectors เช่น .wrapper , .intro </p>
+			<p>• ID selectors เช่น #zen-supporting , #zen-explanation</p>
+			<p>และอื่นๆ เช่น Universal selector (*), combinators (+, >, ~, ' ', ||) , negation pseudo-class (:not())  (ไม่มีผลกับ specificity)</p>
+		</div>
+		<div>
+			<h3>Calculating CSS Specificity Value</h3>
+			<p>• inline-style มีค่าความสำคัญคือ 1,0,0,0 </p>
+			<p>• ID มีค่าความสำคัญคือ 0,1,0,0</p>
+			<p>• class มีค่าความสำคัญคือ 0,0,1,0</p>
+			<p>• element type มีค่าความสำคัญคือ 0,0,0,1</p>
+			<p>โดยจะเรียงค่าความสำคัญจากซ้ายคือมากที่สุด ไปถึงขวาคือน้อยที่สุด</p>
+		</div>
+		<div>
+			<h3>!important</h3>
+			<p>เมื่อใส่ !important เข้าไป จะเป็นการบังคับให้ใช้ selector นั้นๆเลย โดยถ้าให้เปรียบเทียบก็จะมีลำดับความสำคัญคือ 1,0,0,0,0</p>
+		</div>
+		<div>
+			<h3>Example</h3>
+			<p>Html :</P>
+			 &nbsp; &nbsp; &nbsp;<a><</a><a>html></a><br>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a><</a><a>div class=”show”></a><br>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a><</a><a>a> Show me!!<</a><a>/a></a><br>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a><</a><a>/div></a><br>
+			 &nbsp; &nbsp; &nbsp;<a><</a><a>/html></a><br>
+			<p>Css :</p>
+			 &nbsp; &nbsp; &nbsp;<a>.show{</a><br>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a>color: orange;</a><br>
+			 &nbsp; &nbsp; &nbsp;<a>}</a><br>
+			 &nbsp; &nbsp; &nbsp;<a>a {</a><br>
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a>color: yellow;</a><br>
+			 &nbsp; &nbsp; &nbsp;<a>}</a><br><br>
+			<a>ผลลัพธืที่ได้คือ</a> &nbsp;
+			<a style="color: orange">Show me!!</a>	
+
+		</div>
+		<div class="cblue"> 
+			<h3>Reference</h3>
+			• <a href="https://www.designil.com/css-specificity-and-hack.html">https://www.designil.com/css-specificity-and-hack.html</a><br>
+			• <a href="https://css-tricks.com/specifics-on-css-specificity/">https://css-tricks.com/specifics-on-css-specificity/</a><br>
+			• <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</a><br>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+#font {
+  font-family: Sans-serif;
+ }
+.banner{
+  display: flex;
+  flex:100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body{
+	background-color: #E8E8E8;
+}
+header{
+  padding: 25px;
+  text-align: center;
+  color: white;
+  -webkit-animation-name: color-change-2x; 
+  -webkit-animation-duration: 3s; 
+  -webkit-animation-iteration-count: infinite; 
+  animation-name: color-change-2x;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color-change-2x{
+	0%{background:#00CCFF
+	}
+	100%{background:#3366FF
+	}
+}
+h1{
+  font-size: 60px;
+  width: 600px;
+  height: 70px;
+  position: relative;
+  left: 200px;		
+  -webkit-animation-name: rubberBand; 
+  -webkit-animation-duration: 2.5s; 
+  -webkit-animation-iteration-count: 1; 
+  animation-name: rubberBand;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+}
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+h2{
+  font-size: 30px;
+  width: 600px;
+  height: 70px;
+  position: relative;
+  left: 480px;	
+  -webkit-animation-name: fadeInRight; 
+  -webkit-animation-duration: 3s; 
+  -webkit-animation-iteration-count: 1; 
+  animation-name: fadeInRight;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+h3{
+	font-size: 25px;
+}
+p{
+	font-size: 19px;
+	color: #4F4F4F	;
+}
+a{
+	font-size: 19px;
+	color: #4F4F4F	;
+}
+.main{
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+} 
+.col-1 {
+	width: 60%;
+	background: white; 
+	border: 1px solid #BEBEBE; 
+	margin: auto;
+}
+.cblue a{
+	color: #3300CC;
+}
