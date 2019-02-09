@@ -24,7 +24,7 @@ $(document).ready(function() {
         var value = $("#myInput").val().toLowerCase();
         $("#myTable tr").filter(function() {
             console.log("aaaa");
-            $("#myTable tr").toggle($("#myTable tr").text().toLowerCase().indexOf(value) > -1)
+           
         });
 
     });
