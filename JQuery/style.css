@@ -47,9 +47,6 @@ div.example::after {
 #div1 {
 	display:none;
 }
-.col-1 {
-	width: 60%;
-	background: white; 
-	border: 1px solid #BEBEBE; 
-	margin: auto;
+body{
+	background-color: #E8E8E8 
 }

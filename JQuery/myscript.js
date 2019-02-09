@@ -40,16 +40,51 @@ $(document).ready(function() {
     $("#myInput").keyup(function(event){
         console.log(event.keyCode);
             if(event.keyCode == 13){
-                $("#btn").click();
+                $("#btn").click();  
+            }
+    })
+    $("#userId").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
                 $("#btn2").click();
             }
-
+    })
+    $("#jobName").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
+                $("#btn2").click();
+            }
+    })
+    $("#firstName").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
+                $("#btn2").click();
+            }
+    })
+    $("#lastName").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
+                $("#btn2").click();
+            }
+    })
+    $("#phone").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
+                $("#btn2").click();
+            }
+    })
+    $("#emailAddress").keyup(function(event){
+        console.log(event.keyCode);
+            if(event.keyCode == 13){
+                $("#btn2").click();
+            }
     })
     
     $("#formButton").click(function(){
         $("#div1").toggle();
         $("#btn").toggle();
         $("#myInput").toggle();
+        $("#formButton").val("Example Search") ;
     });
 
      $("#btn2").click(function(){
