@@ -41,6 +41,7 @@ $(document).ready(function() {
         console.log(event.keyCode);
             if(event.keyCode == 13){
                 $("#btn").click();
+                $("#btn2").click();
             }
 
     })

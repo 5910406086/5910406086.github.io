@@ -11,18 +11,18 @@ th, td {
 }
 
 /* Style the search field */
-form.example input[type=text] {
+div.example input[type=text] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
+  
   width: 20%;
   background: #f1f1f1;
 }
 
 /* Style the submit button */
-form.example button {
-  float: left;
+div.example button {
+  
   width: 5%;
   padding: 10px;
   background: #2196F3;
@@ -33,19 +33,23 @@ form.example button {
   cursor: pointer;
 }
 
-form.example button:hover {
+div.example button:hover {
   background: #0b7dda;
 }
 
 /* Clear floats */
-form.example::after {
+div.example::after {
   content: "";
   clear: both;
   display: table;
 }
 
 #div1 {
-
-display:none;
-
+	display:none;
+}
+.col-1 {
+	width: 60%;
+	background: white; 
+	border: 1px solid #BEBEBE; 
+	margin: auto;
 }
