@@ -1,9 +1,9 @@
 $(document).ready(function() {
- 
+    
     $.getJSON("data.json", function(data){
         var employee_data = '<tbody id="myTable">';
         $.each(data, function(key, value){
-            console.log("bbb");
+            console.log("vvvv");
             employee_data += '<tr>';
             employee_data += '<td>' + value.userId + '</td>';
             employee_data += '<td>' + value.jobTitleName + '</td>';
@@ -20,15 +20,14 @@ $(document).ready(function() {
         $('#employee_table').append(employee_data);
     });
 
-    $("#btn").click( function() {
-    var value = $("#myInput").val().toLowerCase();
-    $("#myTable tr").filter(function() {
-        console.log("aaa");
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
+    $("#btnSearch").click(function() {
+        var value = $("#myInput").val().toLowerCase();
+        $("#myTable tr").filter(function() {
+            console.log("aaaa");
+            $("#myTable tr").toggle($("#myTable tr").text().toLowerCase().indexOf(value) > -1)
+        });
 
-    
+    });
 
 });
 
