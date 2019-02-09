@@ -43,3 +43,9 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+#div1 {
+
+display:none;
+
+}
