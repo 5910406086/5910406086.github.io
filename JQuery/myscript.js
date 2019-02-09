@@ -3,6 +3,7 @@ $(document).ready(function() {
     $.getJSON("data.json", function(data){
         var employee_data = '<tbody id="myTable">';
         $.each(data, function(key, value){
+            console.log("bbb");
             employee_data += '<tr>';
             employee_data += '<td>' + value.userId + '</td>';
             employee_data += '<td>' + value.jobTitleName + '</td>';
@@ -22,7 +23,8 @@ $(document).ready(function() {
     $("#btn").click( function() {
     var value = $("#myInput").val().toLowerCase();
     $("#myTable tr").filter(function() {
-    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        console.log("aaa");
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 
