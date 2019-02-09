@@ -1,0 +1,55 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+div.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  
+  width: 20%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+div.example button {
+  
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+div.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#div1 {
+	display:none;
+}
+.col-1 {
+	width: 60%;
+	background: white; 
+	border: 1px solid #BEBEBE; 
+	margin: auto;
+}
